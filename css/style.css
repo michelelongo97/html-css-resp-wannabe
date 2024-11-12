@@ -130,25 +130,63 @@ img {
 
 /*da 481 a 768px*/
 
- /*@media screen and (max-width: 768px) {
-    body {
-        background-color: red;   
+ @media screen and (max-width: 768px) {
+    
+    .container{
+        width: auto;
     }
- }*/
+ }
 
 /*da 0 a 480px*/
 
 @media screen and (max-width: 480px) {
   
+    .container{
+        width: auto;
+    }
 
+    .lessons .col{
+        width: 100%;
+    }
+
+    .lessons .row{
+        flex-wrap: wrap;
+    }
+
+    .lessons .text{
+        padding: 50px;
+    }
+
+    .lessons .text{
+        padding-top: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+    .steps{
+        margin: 0px;
+    }
+
+    .steps .row{
+        flex-wrap: wrap;
+    }
+
+    .steps .col{
+        width: 100%;
+    }
+
+    .steps .col:nth-child(2) {
+        padding: 50px 0;
+    }
+
+    .why-us ul:first-child{
+        padding: 50px 0;
+    }
+   
     .why-us{
         background-color: #222222;
         margin-bottom: 0px;
         padding-top: 50px;
-    }
-
-    .steps{
-        margin: 0px;
     }
 
     .why-us .col-left{
@@ -162,44 +200,4 @@ img {
     .why-us .row{
         flex-wrap: wrap;
     }
-
-    .steps .row{
-        flex-wrap: wrap;
-    }
-
-    .steps .col{
-        width: 100%;
-        
-    }
-
-    .lessons .col{
-        width: 100%;
-    }
-
-    .lessons .row{
-        flex-wrap: wrap;
-    }
-
-    .container{
-        width: auto;
-    }
-
-    .lessons .text{
-        padding: 50px;
-    }
-
-    .steps .col:nth-child(2) {
-        padding: 50px 0;
-    }
-
-    .why-us ul:first-child{
-        padding: 50px 0;
-    }
-   
-    .lessons .text{
-        padding-top: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
  }
-
